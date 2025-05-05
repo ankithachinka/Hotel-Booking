@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <button onclick="window.history.back()">Previous</button>
+    <div class="center">
+        <h1>Login</h1>
+        <form>
+            <div class="txt_field">
+                <input type="text"  required>
+                <label><i class="fas fa-user"></i>  Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <label><i class="fas fa-lock"></i>  Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login" onclick="login()">
+            <div class="signup_Link">
+                Not a member? <a href="signup.html">Sign up</a>
+            </div>
+            <div class="signup">OR
+                <div class="signup"> Sign Up using</div>
+                <div class="icons">
+                <span id="fb"><i class="fa-brands fa-facebook"></i></span>
+                <span id="twitter"><i class="fa-brands fa-twitter"></i></span>
+                <span id="google"><i class="fa-brands fa-google"></i></span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        function login(){
+            alert("You have logged in successfully");
+        }
+    </script>
+</body>
+</html>

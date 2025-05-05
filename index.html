@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel-Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- DreamyStay-->
+</head>
+<body>
+    <!-- header -->
+    <header class = "header" id = "header">
+        <div class="head-top">
+            <div class="name">
+                 <span>DreamStay</span> 
+            </div>
+            <div class="nav">
+                <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom">
+            <h2> NICE  AND COMFORTABLE PLACE TO STAY</h2>
+            <p>Discover the perfect stay. Our user-friendly platform connects you with a world of exceptional hotel options, tailored to your unique needs and preferences. Feel the sensation of staying in a hotel. Besides being Comfortable, this hotel prioritizes technology and security.</p>
+            <button type="button" class="head-btn">GET STARTED</button>
+        </div>
+    </header>
+    <!-- end of header-->
+
+    <!-- side navbar-->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id = "cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+        <ul class="navbar">
+            <li><a href = #header>Home</a></li>
+            <li><a href = #services>Services</a></li>
+            <li><a href = #rooms>Rooms</a></li>
+            <li><a href = #customers>Customers</a></li>
+        </ul>
+        <button class = "btn sign-up"><a href="signup.html">Sign up</a></button>
+        <button class = "btn log-in"><a href="login.html">Login</a></button>
+    </div>
+    <!-- end of side navbar-->
+
+    <!--fullscreen-->
+    <div id="modal"></div>
+    <!--end of fullscreen-->
+
+    <!--body content-->
+    <section class="services sec-width" id ="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-utensils"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Dining</h2>
+                    <p>Well-heeled locals and hotel guests flock to our stylish restaurant for the daily breakfast buffet. Later on, choose from an à la carte menu of gourmet international cuisine.  For outdoor dining, there’s our terrace, which overlooks a tree-lined, cobblestone streets.</p>
+                    <button type ="button" class="btn">Know More</button>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-wifi"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Wifi</h2>
+                    <p>We offer free Wi-Fi throughout the hotel for all our guests.  Browse the web, check emails, or share your vacation memories with ease! We invest in a robust Wi-Fi network to ensure a strong, stable connection across all your devices.
+                    DreamStay keeps you connected, comfortable, and ready to explore!</p>
+                    <button type ="button" class="btn">Know More</button>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-dumbbell"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Gym</h2>
+                    <p>The hotel gym is on the 2nd floor. Light and modern, it comes with up-to-date exercise equipment, including treadmills and elliptical machines.
+                        Open 24/7,
+                        Modern exercise equipment,
+                        Natural light and outside views while you exercise
+                        Free towels and water</p>
+                    <button type ="button" class="btn">Know More</button>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-broom"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>House Keeping</h2>
+                    <p>Our hotel Housekeeping services maintains the cleanliness, hygiene, and overall appearance of the property. These services ensure that all areas, including guest rooms, public spaces, and back-of-house areas, are clean, organized, and well-maintained.</p>
+                    <button type ="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-users"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Meetings & Events</h2>
+                    <p>Our 6 meeting rooms can host everything from training workshops to product launches. The largest room fits up to 250 people and all our rooms come fully equipped
+                        We can also entertain private parties for up to 150 guests. For weddings, our chefs can help you devise a personalized menu for your wedding banquet.</p>
+                    <button type ="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span><i class="fas fa-wheelchair"></i></span>
+                </div>
+                <div class="service-content">
+                    <h2>Accessibility</h2>
+                    <p> Our wheelchair service is designed to provide individuals with mobility challenges the freedom and independence to move comfortably and safely. Our service includes the provision, customization, and maintenance of both manual and powered wheelchairs.</p>
+                    <button type ="button" class="btn">Know More</button>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+    <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date</label>
+                <input type="date" id ="checkin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date</label>
+                <input type="date" id ="checkout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now" onclick="book()">
+            </div>
+        </form>
+    </div>
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <article class ="room">
+                <div class="room-image">
+                    <img src = "images/img1.jpg" alt = "room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            In-room dining
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Designer Furniture. 
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Mini-fridge.
+                        </li>
+                    </ul>
+                    <p>Our hotel rooms often come with a host of premium amenities and services that elevate the guest experience to a higher level</p>
+                    <p>Our hotel rooms look amazing, with stylish furniture, comfy carpets, and cool art on the walls. They're oftenvmore spacious than regular rooms, so you've got tons of space to relax and feel super pampered.</p>
+                    <p class="rate">
+                        <span>Rs2999.00/ </span>Per Day
+                    </p>
+                    <button type="button" class="btn"  onclick="book()">Book Now</button>
+                </div>
+            </article>
+
+            <article class ="room"> 
+                <div class="room-image">
+                    <img src = "images/img2.jpg" alt = "room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Large flat-screen Tv.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Luxury bath amenities. 
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Work Desk and Chair.
+                        </li>
+                    </ul>
+                    <p>Our rooms are designed to provide the ultimate in comfort, relaxation, and indulgence. They are typically spacious and feature high-end finishes, such as plush carpeting, marble bathrooms, and designer furniture.</p>
+                    <p> Our rooms are significantly larger than standard rooms. They provide ample room to unwind, sprawl out on a plush king-sized bed, and truly feel like you can breathe</p>
+                    <p class="rate">
+                        <span>Rs2999.00/</span>Per Day
+                    </p>
+                    <button type="button" class="btn" onclick="book()">Book Now</button>
+                </div>
+            </article>
+
+            <article class ="room">
+                <div class="room-image">
+                    <img src = "images/img3.jpg" alt = "room image" >
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Private Balcony.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Comfortable Bed. 
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Personal Hygiene Amenities.
+                        </li>
+                    </ul>
+                    <p>When choosing a hotel, it is important to consider the facilities that are important to you and to choose a hotel that offers those facilities.</p>
+                    <p>We provide High-speed internet access, Room service, Towels, Toiletries, Television, Ironing board, Swimming pool amd many other requirements.</p>
+                    <p class="rate">    
+                        <span>Rs2999.00/</span>Per Day
+                    </p>
+                    <button type="button" class="btn" onclick="book()">Book Now</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="customers" id ="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>Customers</h2>
+            </div>
+            <div class="customers-container">
+                <!--single customer-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved It</h3>
+                    <p>Absolutely superb stay! The bed was incredibly comfortable, and the staff went above and beyond to ensure a fantastic experience. Exceptional value for the quality provided. Will definitely return!</p>
+                    <img src="images/cus1.jpg" alt="customer image">
+                    <span>Mr. & Mrs. Kevin</span>   
+                </div>
+                <!--end of single customer-->
+
+                <!--single customer-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>Great stay overall! Clean and comfortable room with nice amenities. Staff were friendly and helpful, but there were a few minor issues with maintenance. Location was convenient. Would recommend</p>
+                    <img src="images/cus2.jpg" alt="customer image">
+                    <span>Andrew </span>   
+                </div>
+                <!--end of single customer-->
+
+                <!--single customer-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>Outstanding experience! From the moment we walked in, we were greeted warmly by the staff. The room was pristine. The attention to detail throughout our stay was remarkable.Will definitely be returning!</p>
+                    <img src="images/cus3.jpg" alt="customer image">
+                    <span>Taniya & Saanvi</span>   
+                </div>
+                <!--end of single customer-->
+            </div>
+        </div>
+    </section>
+    <!--end of body content-->
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container" id = "footer-container">
+            <div>
+                <h2>About Us</h2>
+                <p>At DreamStay, we believe travel should be exciting and accessible.That's why we offer a curated selection of hotels, apartments, and unique stays, all at competitive prices. Our dedicated customer support team is here to answer any questions you have, 24/7.</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Cards</a>
+            </div>
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#footer-container">About us</a>
+                <a href="#contact-item">Contact Us</a>
+                <a href="#services">Services</a>
+            </div>
+
+            <div>
+                <h2>Have a Question</h2>
+                <div class="contact-item">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>Manali,India</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <span>+91 8324284799</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>dreamstay@domain.com</span>
+                </div>
+                <span>DreamStay copyrights &copy reserved 2024</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function book(){
+            alert("Your room has been booked!");
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
